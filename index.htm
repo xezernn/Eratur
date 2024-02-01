@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        .samaliyyot{
+            background-color: black;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            right: -300px;
+            bottom: -300px;
+            animation: headerAnimation 9s infinite;
+            z-index: 99;
+        }
+
+
+        @keyframes headerAnimation {
+            0% {
+                right: -300px;
+                bottom: -300px;
+            }
+
+            100% {
+                right: 100vw;
+                bottom: 100vh
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="samaliyyot"></div>
+
+</body>
+
+</html>
