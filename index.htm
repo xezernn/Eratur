@@ -2,43 +2,134 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            overflow: hidden;
-        }
-        .samaliyyot{
-            background-color: black;
-            height: 100px;
-            width: 100px;
-            position: absolute;
-            right: -300px;
-            bottom: -300px;
-            animation: headerAnimation 9s infinite;
-            z-index: 99;
-        }
-
-
-        @keyframes headerAnimation {
-            0% {
-                right: -300px;
-                bottom: -300px;
-            }
-
-            100% {
-                right: 100vw;
-                bottom: 100vh
-            }
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/bootstrapCss.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
+	<header>
+		<nav>
+			<div class="container">
+				<a href="#" id="logo"><img src="img/ERATUR-logo-yeni1.png" alt="Sayt Logo" /></a>
 
-    <div class="samaliyyot"></div>
+				<div id="menu1">
+					<div class="dropdown">
+						<a href="#" class="menuItem" data-mdb-toggle="dropdown" aria-expanded="false">Şirkətlər</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<li><a class="dropdown-item" href="#">Haqqımızda</a></li>
+							<li><a class="dropdown-item" href="#">Sertifikatlar</a></li>
+							<li><a class="dropdown-item" href="#">Karyera</a></li>
+						</ul>
+					</div>
+
+					<div class="dropdown">
+						<a href="#" class="menuItem" data-mdb-toggle="dropdown" aria-expanded="false">Müştəri rəyləri</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<li><a class="dropdown-item" href="#">Müştəri fikirləri</a></li>
+							<li><a class="dropdown-item" href="#">Səyahət görüntüləri</a></li>
+						</ul>
+					</div>
+
+					<div class="dropdown">
+						<a href="#" class="menuItem" data-mdb-toggle="dropdown" aria-expanded="false">Turlar</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<li><a class="dropdown-item" href="#">Daxili turlar</a></li>
+							<li><a class="dropdown-item" href="#">Xarici turlar</a></li>
+							<li><a class="dropdown-item" href="#">İnfoturlar</a></li>
+							<li><a class="dropdown-item" href="#">İnsentiv turlar</a></li>
+							<li><a class="dropdown-item" href="#">Qrup turları</a></li>
+							<li><a class="dropdown-item" href="#">Ekskursiyalar </a></li>
+						</ul>
+					</div>
+
+					<div class="dropdown">
+						<a href="#" class="menuItem">Xidmətlər</a>
+					</div>
+
+					<div class="dropdown">
+						<a href="#" class="menuItem" data-mdb-toggle="dropdown" aria-expanded="false">Əməkdaşlıq</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<li><a class="dropdown-item" href="#">Avia Şirkətlər</a></li>
+							<li><a class="dropdown-item" href="#">Korporativ əməkdaşlıq</a></li>
+						</ul>
+					</div>
+
+					<div class="dropdown">
+						<a href="#" class="menuItem">Azərbaycanı Kəşf Et</a>
+					</div>
+
+					<div class="dropdown">
+						<a href="#" class="menuItem">Əlaqə</a>
+					</div>
+
+				</div>
+
+				<div class="navContact">
+					<div class="dropdown">
+						<a href="#" class="navBtn" data-mdb-toggle="dropdown" aria-expanded="false"><img class="miniFlag" src="img/az.png" alt="az bayraq"> <b>Az</b></a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<li><a class="dropdown-item" href="#"><img class="miniFlag" src="img/russianflag.png" alt="rus flag"> Ru</a></li>
+							<li><a class="dropdown-item" href="#"><img class="miniFlag" src="img/ukFlag.png" alt="UK flag"> Eng</a></li>
+						</ul>
+					</div>
+					<button class="navBtn"><img class="miniFlag" id="telIcon" src="	https://eratur.az/img/svg.svg" alt="wp logo">
+						<b>(+99455) 596-05-14</b></button>
+				</div>
+			</div>
+		</nav>
+		<div class="headerSlider"></div>
+		<div class="teyyare"></div>
+	</header>
+
+	<main></main>
+	<footer>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
 
 </body>
+
+
+
 
 </html>
