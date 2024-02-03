@@ -1,22 +1,18 @@
 
-*{
-    font-family: "CocoSharp" !important;
+*{  font-family: "CocoSharp" !important;
     font-weight: 400;
 }
 
-body{
-    background-color: black!important
-}
 nav {
     height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
+    position: fixed;
+    z-index: 3;
 }
 
-.container {
-    max-width: 1320px;
-}
+.container {max-width: 1320px}
 
 nav .container {
     display: flex;
@@ -27,27 +23,34 @@ nav .container {
 #logo {
     width: 150px;
     height: 70px;
+    filter: brightness(100);
 }
 
-#logo img {
-    width: 100%;
-}
+.filter{filter:initial !important;}
+
+#logo img {width: 100%;}
 
 #menu1 {
     display: flex;
-    margin-bottom: 0    ;
-
+    margin-bottom: 0;
 }
-
 .menuItem {
     color: #fff;
     padding: 7px 10px;
+    font-weight: 700;
     border: 3px solid transparent;
+}
+.navMenuActive *{
+    font-weight: 700;
+    color: #000 !important;
+    filter: brightness(none);
 }
 .navBtn:hover ,.menuItem:hover{
     border-radius: 25px;
+    transition: .2s;
     border: 3px solid white;
 }
+.navBorder:hover{border: 3px solid #7a4b92;}
 .navContact{
     display: flex;
     align-items: center;
@@ -60,7 +63,6 @@ nav .container {
     color: white;
     font-size: bold;
 }
-.miniFlag{
-    width: 22px;
-}
-#telIcon{margin-right: 10px;}
+#tel{filter: brightness(100);}
+#tel img{margin-right: 10px;  }
+.miniFlag{width: 22px}
