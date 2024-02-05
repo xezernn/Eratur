@@ -26,7 +26,18 @@ function openDrop4() {
     flag4 = !flag4
 }
 
-function showMenu(){
+function showMenu() {
     offcanvasRight.classList.toggle("show")
     document.body.classList.toggle("overflow-hidden")
 }
+
+const nextBtn = document.querySelector('.swiper-button-next')
+const prevBtn = document.querySelector('.swiper-button-prev')
+
+function handleSwiperBtn() {
+    nextBtn.style.display = window.innerWidth > 970 ? 'none' : 'block'
+    prevBtn.style.display = window.innerWidth > 970 ? 'none' : 'block'
+}
+handleSwiperBtn()
+window.onresize = handleSwiperBtn
+
