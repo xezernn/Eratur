@@ -404,17 +404,122 @@ h4 {
     line-height: 1.42857143;
     background-color: #f9f9f9;
     border-radius: 22px;
-    color: #000 ;
+    color: #000;
     font-size: 14px;
 }
 
-.sale{
+.sale {
     background: url("../img/s");
+}
+
+/* main services section */
+
+.services {
+
+    /* flex-direction: column; */
+    padding: 50px 27px;
+    background-color: #fff5ec;
+    position: relative;
+    overflow: hidden;
+}
+
+.services .container2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services p {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font: 14px CocoSharp;
+
+}
+
+.services h5 {
+    font: 600 25px CocoSharp;
+    color: rgb(48, 46, 46);
+}
+
+.serBtn {
+    font-family: CocoSharp;
+    background: #7a4b92;
+    border: none;
+    width: 220px !important;
+    padding: 10px 15px !important;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    transition-duration: 300ms;
+}
+
+.servisIcons {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.servisIcon {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servisIcon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+
+}
+
+.servisIcon img {
+    width: 55%;
+    object-fit: contain;
+    height: 80%;
+}
+
+.servisIcon span {
+    margin: 10px 0;
+}
+
+footer{
+    height: 200vh;
 }
 
 @media only screen and (min-width: 600px) {
     .offcanvas {
         width: 400px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .serBtn {
+        width: 260px !important;
+        padding: 15px !important;
+    }
+
+    .services h5 {
+        font-size: 42px;
+    }
+
+    .services p {
+        line-height: 34px;
+        margin-bottom: 54px;
+    }
+
+    .servisIcon {
+        width: 25%;
+    }
+
+    .servisIcon a {
+        width: 155px;
+        height: 155px;
     }
 }
 
@@ -500,6 +605,16 @@ h4 {
 
     .sliderContent h1 {
         font-size: 42px !important;
-        ;
     }
+
+    .servisIcons {
+        margin: 0;
+    }
+
+    .servisIcon a:hover {
+        transition-duration: 300ms;
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+
 }
