@@ -3,6 +3,9 @@
     display: block;
     border-radius: 2px;
     border-top: 3px solid #7a4b92;
+    position: absolute;
+    top: 29px;
+    left: -25px;
 }
 
 .dropdown-menu a {
