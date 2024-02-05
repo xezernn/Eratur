@@ -284,6 +284,7 @@ h2 {
 
 .tours .swiper-slide {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 30px;
+    height: min-content;
 }
 
 .container2 {
@@ -291,7 +292,7 @@ h2 {
 }
 
 .cardTop {
-    height: 220px;
+    height: 190px;
     background: url("https://eratur.az/uploads/posts/2023-10/1697119451_gtr-turkey-600x400-1.jpg") center/cover;
     object-fit: cover;
     border-radius: 0.375rem;
@@ -455,7 +456,7 @@ h4 {
 
 .servisIcons {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 20px 0;
 }
@@ -532,6 +533,7 @@ footer {
 
 .dis-content h3 {
     font-size: 44px;
+    font-weight: 400;
     color: #000 !important;
     text-align: center;
 }
