@@ -462,6 +462,17 @@ h4 {
 
 .servisIcon {
     width: 50%;
+}
+.discover{
+    padding-bottom: 60px
+}
+
+.discover h2 {
+    font-size: 25px;
+}
+
+.dis-card {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -488,9 +499,68 @@ h4 {
     margin: 10px 0;
 }
 
-footer{
+footer {
     height: 200vh;
 }
+
+.dis-img {
+    width: 100% !important;
+    height: 195px !important;
+    overflow: hidden;
+}
+
+.dis-img img {
+    transition: 1s;
+}
+
+.dis-img img:hover {
+    scale: 1.1;
+}
+
+.dis-content {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.dis-content img {
+    max-height: 195px;
+    max-width: 230px;
+}
+
+.dis-content h3 {
+    font-size: 44px;
+    color: #000 !important;
+    text-align: center;
+}
+
+.dis-content p {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #959595;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+.dis-content button {
+    width: 150px;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 7px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .8rem;
+    transition: .3s;
+}
+
+.dis-content button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
 
 @media only screen and (min-width: 600px) {
     .offcanvas {
@@ -521,6 +591,10 @@ footer{
         width: 155px;
         height: 155px;
     }
+    .discover{
+        padding: 60px 0 80px 0;
+    }
+    
 }
 
 
@@ -617,4 +691,11 @@ footer{
         transform: rotate(-360deg);
     }
 
+    .discover .swiper-slide {
+        width: 307px !important;
+    }
+
+    .discover h2 {
+        font-size: 38px !important;
+    }
 }
