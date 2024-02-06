@@ -244,6 +244,7 @@ a {
     z-index: 9999;
 }
 
+
 .wpIcon {
     position: fixed;
     bottom: 40px;
@@ -671,12 +672,15 @@ footer {
     color: #000 !important;
 }
 
-.info-content i, .info-link i {
+.info-content i,
+.info-link i {
     font-size: 1.2rem;
     margin-left: 10px;
 }
 
-.info-content i:hover, .info-link i:hover, .info a:hover i{
+.info-content i:hover,
+.info-link i:hover,
+.info a:hover i {
     animation: arrowAct 1s infinite ease-in-out forwards;
 }
 
@@ -684,9 +688,11 @@ footer {
     0% {
         transform: translateX(0);
     }
+
     50% {
         transform: translateX(10px);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -722,11 +728,51 @@ footer {
     margin-bottom: 15px;
 }
 
-.partner .swiper{
+.partner .swiper {
     height: 150px;
     margin-bottom: 20px;
 }
 
+.comments {
+    font-family: "CocoSharp" !important;
+}
+
+.comments .swiper {margin: 40px 0;}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+}
+.comment h3 {
+    text-align: center !important;
+    color: #000 !important;
+}
+
+.com-content p {
+    margin: 0;
+}
+
+.com-content span {
+    font-size: 10px;
+    color: #959595;
+    letter-spacing: 3px;
+}
+
+.com-link a {
+    color: #000;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.comment > p {
+    font-size: 16px;
+    width: 80%;
+}
 
 
 @media only screen and (min-width: 600px) {
@@ -763,7 +809,8 @@ footer {
     .discover {
         padding: 60px 0 80px 0;
     }
-    .partner{
+
+    .partner {
         padding: 100px 0;
     }
 
@@ -780,14 +827,13 @@ footer {
         flex-direction: row;
         align-items: center;
     }
-    
+
     .sliders {
         width: 91%;
         display: flex;
         flex-direction: column;
 
     }
-
 }
 
 
@@ -798,6 +844,10 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) {
+    h2 {
+        font-size: 38px !important;
+    }
+
     .container2 {
         width: 89.1%;
         margin: auto;
@@ -891,7 +941,7 @@ footer {
     .discover h2 {
         font-size: 38px !important;
     }
-    
+
     .info-cards {
         flex-direction: row;
     }
@@ -916,5 +966,15 @@ footer {
         height: 100%;
     }
 
-    .info-title h2 {font-size: 38px !important;}
+    .info-title h2 {
+        font-size: 38px !important;
+    }
+
+    .comments .swiper-slide {
+        height: 255px;
+    }
+
+    .comment > p {
+        width: initial;
+    }
 }
