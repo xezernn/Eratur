@@ -297,18 +297,53 @@ h2 {
     border-radius: 0.375rem;
 }
 
-.bg1 {background: url("../img/tour1.jpg") center/cover;}
-.bg2 {background: url("../img/tour2.jpg") center/cover;}
-.bg3 {background: url("../img/tour3.jpg") center/cover;}
-.bg4 {background: url("../img/tour4.jpg") center/cover;}
-.bg5 {background: url("../img/tour5.jpg") center/cover;}
-.bg6 {background: url("../img/tour6.jpg") center/cover;}
-.bg7 {background: url("../img/tour7.webp") center/cover;}
-.bg8 {background: url("../img/tour8.jpg") center/cover;}
-.bg9 {background: url("../img/tour9.jpg") center/cover;}
-.bg10 {background: url("../img/tour10.webp") center/cover;}
-.bg11 {background: url("../img/tour11.jpg") center/cover;}
-.bg12 {background: url("../img/tour12.jpg") center/cover;}
+.bg1 {
+    background: url("../img/tour1.jpg") center/cover;
+}
+
+.bg2 {
+    background: url("../img/tour2.jpg") center/cover;
+}
+
+.bg3 {
+    background: url("../img/tour3.jpg") center/cover;
+}
+
+.bg4 {
+    background: url("../img/tour4.jpg") center/cover;
+}
+
+.bg5 {
+    background: url("../img/tour5.jpg") center/cover;
+}
+
+.bg6 {
+    background: url("../img/tour6.jpg") center/cover;
+}
+
+.bg7 {
+    background: url("../img/tour7.webp") center/cover;
+}
+
+.bg8 {
+    background: url("../img/tour8.jpg") center/cover;
+}
+
+.bg9 {
+    background: url("../img/tour9.jpg") center/cover;
+}
+
+.bg10 {
+    background: url("../img/tour10.webp") center/cover;
+}
+
+.bg11 {
+    background: url("../img/tour11.jpg") center/cover;
+}
+
+.bg12 {
+    background: url("../img/tour12.jpg") center/cover;
+}
 
 .cardTop a {
     display: block;
@@ -478,7 +513,8 @@ h4 {
     flex-direction: column;
     align-items: center;
 }
-.discover{
+
+.discover {
     padding-bottom: 60px
 }
 
@@ -577,11 +613,37 @@ footer {
 }
 
 
+/* sirketler  */
+.partner {
+    font-family: "CocoSharp" !important;
+    padding: 40px 0 75px 0;
+    text-align: center;
+}
+
+.partner .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.partner h6 {
+    font-size: 26px;
+    color: #252525;
+    margin-bottom: 15px;
+}
+
+.partner .swiper{
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+
 
 @media only screen and (min-width: 600px) {
     .offcanvas {
         width: 400px !important;
     }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -607,10 +669,32 @@ footer {
         width: 155px;
         height: 155px;
     }
-    .discover{
+
+    .discover {
         padding: 60px 0 80px 0;
     }
+
+    .partner h6 {
+        width: 9%;
+        white-space: nowrap;
+        font-size: 26px;
+        rotate: 270deg;
+        height: min-content;
+        margin: 0 0 -115px 0;
+    }
+
+    .partner .container {
+        flex-direction: row;
+        align-items: center;
+    }
     
+    .sliders {
+        width: 91%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
 }
 
 
