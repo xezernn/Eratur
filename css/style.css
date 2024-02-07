@@ -875,7 +875,7 @@ footer * {
 
 .f-dark {
     background-color: #1E2026;
-    padding: 50px 0;
+    padding: 50px 15px;
     font-family: "CocoSharp" !important;
 }
 
@@ -929,6 +929,28 @@ footer * {
 .f-menu ul li a {
     color: #fff;
     font-size: 14px;
+}
+
+.f-copy .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 15px;
+}
+
+.f-copy p {margin: 0 !important;}
+
+.copy-logo {
+    display: flex;
+    align-items: center;
+    color: #B2B2B2;
+    font-size: 14px;
+}
+
+.copy-logo img {
+    max-width: 100px;
+    object-fit: contain;
+    margin: 0 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1176,6 +1198,11 @@ footer * {
     }
 
     .f-menu ul li a {font-size: 18px;}
+
+    .f-copy .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
