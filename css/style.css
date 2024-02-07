@@ -7,6 +7,12 @@ body {
     overflow-x: hidden;
 }
 
+header,
+main,
+footer {
+    overflow: hidden;
+}
+
 nav {
     height: 100px;
     width: 100%;
@@ -99,6 +105,7 @@ h1 {
 
 .offcanvas {
     width: 100vw !important;
+    z-index: 9999 !important;
 }
 
 .offcanvas-body {
@@ -241,7 +248,7 @@ a {
     right: -300px;
     bottom: -300px;
     animation: headerAnimation 9s infinite;
-    z-index: 9999;
+    z-index: 99;
 }
 
 .wpIcon {
@@ -551,10 +558,6 @@ h4 {
     margin: 10px 0;
 }
 
-footer {
-    height: 200vh;
-}
-
 .dis-img {
     width: 100% !important;
     height: 195px !important;
@@ -671,12 +674,15 @@ footer {
     color: #000 !important;
 }
 
-.info-content i, .info-link i {
+.info-content i,
+.info-link i {
     font-size: 1.2rem;
     margin-left: 10px;
 }
 
-.info-content i:hover, .info-link i:hover, .info a:hover i{
+.info-content i:hover,
+.info-link i:hover,
+.info a:hover i {
     animation: arrowAct 1s infinite ease-in-out forwards;
 }
 
@@ -684,9 +690,11 @@ footer {
     0% {
         transform: translateX(0);
     }
+
     50% {
         transform: translateX(10px);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -722,7 +730,7 @@ footer {
     margin-bottom: 15px;
 }
 
-.partner .swiper{
+.partner .swiper {
     height: 150px;
     margin-bottom: 20px;
 }
@@ -734,6 +742,96 @@ footer {
         width: 400px !important;
     }
 
+}
+
+footer * {
+    font-family: CocoSharp;
+}
+
+.footerSale {
+    overflow: hidden;
+    height: 425px;
+    background-color: #0098db;
+    position: relative;
+}
+
+.cloud {
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    bottom: 0;
+    background: url("../img/clouds.png") center/cover no-repeat;
+}
+
+.cloudContent h2 {
+    text-align: start;
+    font-size: 25px !important;
+    line-height: 1.5;
+    color: white;
+    font-weight: 500 !important;
+
+}
+
+.cloudContent button {
+    padding: 20px 60px;
+    background-color: #0098DC;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #0098DC;
+    font-size: 16px;
+    position: relative;
+    top: 120px;
+    z-index: 1;
+    text-transform: uppercase;
+    animation: hereket 2s ease infinite;
+    text-decoration: none;
+    transition: all .2s ease;
+    font-weight: 400;
+}
+
+.cloudContent button:hover {
+    background-color: #7A4B92;
+}
+
+@keyframes hereket {
+    0% {
+        transform: scale(1);
+    }
+
+    15% {
+        -webkit-box-shadow: 0 0 0 5px rgba(0, 152, 220, 0.65);
+        -moz-box-shadow: 0 0 0 5px rgba(0, 152, 220, 0.65);
+        box-shadow: 0 0 0 5px rgba(0, 152, 220, 0.65);
+    }
+
+    25% {
+        -webkit-box-shadow: 0 0 0 10px rgba(0, 152, 220, 0.84), 0 0 0 20px rgba(0, 152, 220, 1);
+        -moz-box-shadow: 0 0 0 10px rgba(0, 152, 220, 0.84), 0 0 0 20px rgba(0, 152, 220, 1);
+        box-shadow: 0 0 0 10px rgba(0, 152, 220, 0.84), 0 0 0 20px rgba(0, 152, 220, 1);
+    }
+
+    25% {
+        -webkit-box-shadow: 0 0 0 15px rgba(0, 152, 220, 0.25), 0 0 0 30px rgba(0, 152, 220, 0.25);
+        -moz-box-shadow: 0 0 0 15px rgba(0, 152, 220, 0.25), 0 0 0 30px rgba(0, 152, 220, 0.25);
+        box-shadow: 0 0 0 15px rgba(0, 152, 220, 0.25), 0 0 0 30px rgba(0, 152, 220, 0.25);
+    }
+}
+
+.footerAirplane {
+    display: none;
+}
+
+.footerBlack {
+    height: 400px;
+    background-color: red;
 }
 
 @media only screen and (min-width: 768px) {
@@ -760,10 +858,17 @@ footer {
         height: 155px;
     }
 
+    .servisIcon a:hover {
+        transition-duration: 300ms;
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+
     .discover {
         padding: 60px 0 80px 0;
     }
-    .partner{
+
+    .partner {
         padding: 100px 0;
     }
 
@@ -780,22 +885,35 @@ footer {
         flex-direction: row;
         align-items: center;
     }
-    
+
     .sliders {
         width: 91%;
         display: flex;
         flex-direction: column;
-
     }
 
+    .cloudContent h2 {
+        font-size: 35px !important;
+    }
+
+    .cloudContent button {
+        top: 80px !important;
+    }
+
+    .footerAirplane {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        right: 0;
+    }
+
+    .info-card {
+        width: 100%
+    }
 }
 
 
-@media only screen and (max-width: 1300px) {
-    #menu1 * {
-        font-size: 13px;
-    }
-}
 
 @media only screen and (min-width: 1200px) {
     .container2 {
@@ -878,12 +996,6 @@ footer {
         margin: 0;
     }
 
-    .servisIcon a:hover {
-        transition-duration: 300ms;
-        -webkit-transform: rotate(-360deg);
-        transform: rotate(-360deg);
-    }
-
     .discover .swiper-slide {
         width: 307px !important;
     }
@@ -891,7 +1003,7 @@ footer {
     .discover h2 {
         font-size: 38px !important;
     }
-    
+
     .info-cards {
         flex-direction: row;
     }
@@ -899,6 +1011,7 @@ footer {
     .info-card {
         flex-direction: row !important;
         height: 220px;
+        width: initial;
     }
 
     .info-content {
@@ -916,5 +1029,17 @@ footer {
         height: 100%;
     }
 
-    .info-title h2 {font-size: 38px !important;}
+    .info-title h2 {
+        font-size: 38px !important;
+    }
+
+    .tours {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #menu1 * {
+        font-size: 13px;
+    }
 }

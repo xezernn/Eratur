@@ -21,4 +21,3 @@ function scrollNavBar() {
         nav.style.boxShadow = "initial"
     }
 }
-window.onscroll = scrollNavBar
