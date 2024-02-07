@@ -4,9 +4,10 @@
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
+html,
 header,
 main,
 footer {
@@ -245,7 +246,7 @@ a {
 
 .airplane {
     position: absolute;
-    right: -300px;
+    right: 0px;
     bottom: -300px;
     animation: headerAnimation 9s infinite;
     z-index: 99;
@@ -1085,18 +1086,19 @@ footer * {
     .tours {
         margin-bottom: 0;
     }
-    .comments{
+
+    .comments {
         padding-bottom: 20px;
+    }
+
+    .comments .swiper-slide {
+        height: 255px;
     }
 }
 
 @media only screen and (max-width: 1300px) {
     #menu1 * {
         font-size: 13px;
-    }
-
-    .comments .swiper-slide {
-        height: 255px;
     }
 
     .comment>p {
