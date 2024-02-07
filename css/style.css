@@ -251,6 +251,7 @@ a {
     z-index: 99;
 }
 
+
 .wpIcon {
     position: fixed;
     bottom: 40px;
@@ -735,6 +736,49 @@ h4 {
     margin-bottom: 20px;
 }
 
+.comments {
+    font-family: "CocoSharp" !important;
+}
+
+.comments .swiper {
+    margin: 40px 0;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.comment h3 {
+    text-align: center !important;
+    color: #000 !important;
+}
+
+.com-content p {
+    margin: 0;
+}
+
+.com-content span {
+    font-size: 10px;
+    color: #959595;
+    letter-spacing: 3px;
+}
+
+.com-link a {
+    color: #000;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.comment>p {
+    font-size: 16px;
+    width: 80%;
+}
 
 
 @media only screen and (min-width: 600px) {
@@ -896,6 +940,7 @@ footer * {
         font-size: 35px !important;
     }
 
+
     .cloudContent button {
         top: 80px !important;
     }
@@ -916,6 +961,10 @@ footer * {
 
 
 @media only screen and (min-width: 1200px) {
+    h2 {
+        font-size: 38px !important;
+    }
+
     .container2 {
         width: 89.1%;
         margin: auto;
@@ -1036,10 +1085,21 @@ footer * {
     .tours {
         margin-bottom: 0;
     }
+    .comments{
+        padding-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
     #menu1 * {
         font-size: 13px;
+    }
+
+    .comments .swiper-slide {
+        height: 255px;
+    }
+
+    .comment>p {
+        width: initial;
     }
 }
