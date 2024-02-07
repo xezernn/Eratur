@@ -874,9 +874,84 @@ footer * {
     display: none;
 }
 
-.footerBlack {
-    height: 400px;
-    background-color: red;
+.f-dark {
+    background-color: #1E2026;
+    padding: 50px 15px;
+    font-family: "CocoSharp" !important;
+}
+
+.f-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f-title h5 {
+    font-size: 33px ;
+    color: #fff ;
+}
+
+.f-title h5 span {color: #7A4B92 !important; font-weight: 700;}
+
+.f-icons a i {
+    color: #fff;
+    background-color: #AFBBC6;
+    padding: 10px 11px;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.f-icons .fa-facebook-f {padding: 11px 14px !important;}
+
+.f-icons .fa-youtube {padding: 10px !important;}
+
+.f-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.f-menu div div {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.f-menu p {margin: 0;}
+
+.f-menu ul {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.f-menu ul li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.f-copy .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 15px;
+}
+
+.f-copy p {margin: 0 !important;}
+
+.copy-logo {
+    display: flex;
+    align-items: center;
+    color: #B2B2B2;
+    font-size: 14px;
+}
+
+.copy-logo img {
+    max-width: 100px;
+    object-fit: contain;
+    margin: 0 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1093,6 +1168,41 @@ footer * {
 
     .comments .swiper-slide {
         height: 255px;
+    }
+
+    .comments .swiper-slide img {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .f-dark .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 60px;
+    } 
+
+    .f-title {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .f-menu {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end !important;
+    }
+
+    .f-menu ul {
+        flex-direction: row;
+        gap: 4vw;
+    }
+
+    .f-menu ul li a {font-size: 18px;}
+
+    .f-copy .container {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
