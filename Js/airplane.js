@@ -21,7 +21,7 @@ if (footer) {
     function airplane() {
         const scrollOffset = (window.scrollY + windowHeight - sectionOffset) / windowHeight;
 
-        let translateX, translateY 
+        let translateX, translateY
         let scaleFactor = 1;
 
         if (windowHeight >= 1300) {
@@ -39,8 +39,6 @@ if (footer) {
             translateY = scrollOffset * 300;
         }
         air.style.transform = `translate(-${translateX}px, -${translateY}px) scale(${scaleFactor})`;
-        
-        scrollNavBar()
     }
 
     window.onscroll = airplane

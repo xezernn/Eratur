@@ -4,15 +4,23 @@
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 a {text-decoration: none !important;}
 
+html,
 header,
 main,
 footer {
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
 nav {
@@ -247,7 +255,7 @@ a {
 
 .airplane {
     position: absolute;
-    right: -300px;
+    right: 0px;
     bottom: -300px;
     animation: headerAnimation 9s infinite;
     z-index: 99;
