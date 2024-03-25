@@ -7,7 +7,9 @@ body {
     overflow-x: hidden !important;
 }
 
-a {text-decoration: none !important;}
+a {
+    text-decoration: none !important;
+}
 
 html,
 header,
@@ -16,7 +18,7 @@ footer {
     overflow-x: hidden;
 }
 
-header{
+header {
     width: 100%;
     /* height: 100vh; */
     overflow: hidden;
@@ -896,11 +898,14 @@ footer * {
 }
 
 .f-title h5 {
-    font-size: 33px ;
-    color: #fff ;
+    font-size: 33px;
+    color: #fff;
 }
 
-.f-title h5 span {color: #7A4B92 !important; font-weight: 700;}
+.f-title h5 span {
+    color: #7A4B92 !important;
+    font-weight: 700;
+}
 
 .f-icons a i {
     color: #fff;
@@ -910,9 +915,13 @@ footer * {
     margin: 0 3px;
 }
 
-.f-icons .fa-facebook-f {padding: 11px 14px !important;}
+.f-icons .fa-facebook-f {
+    padding: 11px 14px !important;
+}
 
-.f-icons .fa-youtube {padding: 10px !important;}
+.f-icons .fa-youtube {
+    padding: 10px !important;
+}
 
 .f-menu {
     display: flex;
@@ -927,7 +936,9 @@ footer * {
     gap: 5px;
 }
 
-.f-menu p {margin: 0;}
+.f-menu p {
+    margin: 0;
+}
 
 .f-menu ul {
     padding: 0 !important;
@@ -948,7 +959,9 @@ footer * {
     padding: 20px 15px;
 }
 
-.f-copy p {margin: 0 !important;}
+.f-copy p {
+    margin: 0 !important;
+}
 
 .copy-logo {
     display: flex;
@@ -961,6 +974,102 @@ footer * {
     max-width: 100px;
     object-fit: contain;
     margin: 0 10px;
+}
+
+.headerPage {
+    height: 340px;
+    width: 100%;
+    background: url("../img/innerbg2.jpeg") center/cover;
+}
+
+.innerBg {
+    position: absolute;
+    inset: 0;
+    background-color: #4e4e4e99;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+}
+
+.innerBg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.innerTitle {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 0 25px;
+    width: 100%;
+    margin: auto;
+}
+
+.innerTitle h1 {
+    width: 100%;
+    padding: 30px 0;
+    font-size: 22px !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.innerComponent {
+    display: flex;
+    padding: 25px 0px 50px;
+    align-items: center;
+}
+
+.geri {
+    color: #ffffff7a;
+    transition: all .3s ease;
+    display: block;
+    white-space: nowrap;
+    font-size: 18px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    /* margin-right: 50px; */
+}
+
+.geri::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 62px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-left: 40px;
+}
+
+.anasehife {
+    margin-left: 30px;
+    font-size: 14px;
+    color: white;
+}
+
+.anasehife a {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.haqqimizda{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.haqqimizda .img{
+    height: 450px;
+    margin-bottom: 20px;
+    width: 100%;
+    background: url("../img/haqqimizdaimg.jpg") center/cover no-repeat;
+}
+
+.haqqimizda *{
+    font-family: "CocoSharp" !important;
+}
+
+.emekdasliq .sliders{
+    width: 100% !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1041,6 +1150,8 @@ footer * {
     .info-card {
         width: 100%
     }
+
+    
 }
 
 
@@ -1189,7 +1300,7 @@ footer * {
         flex-direction: column;
         justify-content: space-between;
         gap: 60px;
-    } 
+    }
 
     .f-title {
         flex-direction: row;
@@ -1207,12 +1318,15 @@ footer * {
         gap: 4vw;
     }
 
-    .f-menu ul li a {font-size: 18px;}
+    .f-menu ul li a {
+        font-size: 18px;
+    }
 
     .f-copy .container {
         flex-direction: row;
         justify-content: space-between;
     }
+    
 }
 
 @media only screen and (max-width: 1300px) {

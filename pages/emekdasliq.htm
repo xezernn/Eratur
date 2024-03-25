@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haqqımızda » Era-tour - travel agency in Azerbaijan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://eratur.az/img/ERATUR-logo-ai.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/bootstrapCss.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="../index.htm" id="logo"><img src="../img/ERATUR-logo-yeni1.png" alt="Sayt Logo" /></a>
+
+                <div id="menu1">
+                    <div class="dropdown">
+                        <a href="haqqimizda.htm" id="menuElem" class="menuItem" data-mdb-toggle="dropdown"
+                            aria-expanded="false">Şirkət</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="haqqimizda.htm">Haqqımızda</a></li>
+                            <li><a class="dropdown-item" href="haqqimizda.htm">Sertifikatlar</a></li>
+                            <li><a class="dropdown-item" href="haqqimizda.htm">Karyera</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="musterireyleri.htm" id="menuElem" class="menuItem" data-mdb-toggle="dropdown"
+                            aria-expanded="false">Müştəri
+                            rəyləri</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="musterireyleri.htm">Müştəri fikirləri</a></li>
+                            <li><a class="dropdown-item" href="musterireyleri.htm">Səyahət görüntüləri</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="#" id="menuElem" class="menuItem" data-mdb-toggle="dropdown"
+                            aria-expanded="false">Turlar</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Daxili turlar</a></li>
+                            <li><a class="dropdown-item" href="#">Xarici turlar</a></li>
+                            <li><a class="dropdown-item" href="#">İnfoturlar</a></li>
+                            <li><a class="dropdown-item" href="#">İnsentiv turlar</a></li>
+                            <li><a class="dropdown-item" href="#">Qrup turları</a></li>
+                            <li><a class="dropdown-item" href="#">Ekskursiyalar </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="xidmetler.htm" id="menuElem" class="menuItem">Xidmətlər</a>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="emekdasliq.htm" id="menuElem" class="menuItem" data-mdb-toggle="dropdown"
+                            aria-expanded="false">Əməkdaşlıq</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="emekdasliq.htm">Avia Şirkətlər</a></li>
+                            <li><a class="dropdown-item" href="emekdasliq.htm">Korporativ əməkdaşlıq</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="azerbaycanikesfet.htm" id="menuElem" class="menuItem">Azərbaycanı Kəşf Et</a>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="#" id="menuElem" class="menuItem">Əlaqə</a>
+                    </div>
+
+                </div>
+
+                <div class="navContact">
+                    <div class="dropdown">
+                        <a href="#" class="navBtn" data-mdb-toggle="dropdown" aria-expanded="false"><img
+                                class="miniFlag" src="../img/az.png" alt="az bayraq"> <b>Az</b></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#"><img class="miniFlag" src="../img/russianflag.png"
+                                        alt="rus flag"> Ru</a></li>
+                            <li><a class="dropdown-item" href="#"><img class="miniFlag" src="../img/ukFlag.png"
+                                        alt="UK flag"> Eng</a></li>
+                        </ul>
+                    </div>
+                    <button id="tel" class="navBtn"><img class="miniFlag" src="../img/telefonLogo.svg" alt="wp logo">
+                        <b>(+99455) 596-05-14</b></button>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel" aria-modal="true" role="dialog">
+                    <div class="offcanvas-header">
+                        <button type="button" onclick="showMenu()" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close">
+                            <!-- <i class="fa-solid fa-xmark"></i> -->
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="canvas-logo">
+                            <a href="#">
+                                <img src="../img/ERATUR-logo-yeni1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="canvas-menu">
+                            <ul>
+                                <li onclick="openDrop1()">Şirkət <span>ˬ</span>
+                                    <ul id="cDrop1" class="cDrop">
+                                        <li><a href="haqqimizda.htm">Haqqımızda</a></li>
+                                        <li><a href="haqqimizda.htm">Sertifikatlar</a></li>
+                                        <li><a href="haqqimizda.htm">Karyera</a></li>
+                                    </ul>
+                                </li>
+                                <li onclick="openDrop2()">Müştəri rəyləri <span>ˬ</span>
+                                    <ul id="cDrop2" class="cDrop">
+                                        <li><a href="musterireyleri.htm">Müştəri fikirləri</a></li>
+                                        <li><a href="musterireyleri.htm">Səyahət görüntüləri</a></li>
+                                    </ul>
+                                </li>
+                                <li onclick="openDrop3()">Turlar <span>ˬ</span>
+                                    <ul id="cDrop3" class="cDrop">
+                                        <li><a href="#">Daxili turlar</a></li>
+                                        <li><a href="#">Xarici turlar</a></li>
+                                        <li><a href="#">İnfoturlar</a></li>
+                                        <li><a href="#">İnsentiv turlar</a></li>
+                                        <li><a href="#">Qrup turları</a></li>
+                                        <li><a href="#">{Ekskursiyalar}</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="xidmetler.htm">Xidmətlər</a></li>
+                                <li onclick="openDrop4()">Əməkdaşlıq <span>ˬ</span>
+                                    <ul id="cDrop4" class="cDrop">
+                                        <li><a href="emekdasliq.htm">Avia Şirkət</a></li>
+                                        <li><a href="emekdasliq.htm">Korporativ Əməkdaşlıq</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="azerbaycanikesfet.htm">Azərbaycanı Kəşf Et</a></li>
+                                <li><a href="">Əlaqə</a></li>
+                            </ul>
+                            <button class="canvas-btn">Qiymət təklifi al</button>
+                        </div>
+                        <div class="canvas-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100092662516750" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://instagram.com/eraatour?igshid=MzRlODBiNWFlZA==" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@ERATUR" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/mwlite/in/era-tur-241054278" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="canvas-flags">
+                            <li><a href="https://eratur.az/az/"><img src="../img/az.png" alt="Azerbaijan">az</a></li>
+                            <li><a href="https://eratur.az/en/"><img src="../img/ukFlag.png" alt="English">en</a></li>
+                            <li><a href="https://eratur.az/ru/"><img src="../img/russianflag.png" alt="Russian">ru</a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+
+                <div onclick="showMenu()" class="showMenuIcon" id="nav-icon1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        <div class="headerPage">
+            <div class="innerBg">
+                <div class="innerTitle">
+                    <div class="container">
+                        <h1>Avia şirkətlər</h1>
+                        <div class="innerComponent">
+                            <a class="geri" href="../index.htm"> <i class="fas fa-chevron-left"></i> Geriyə qayıt</a>
+                            <div class="anasehife">
+                                <a href="../index.htm">Ana səhifə/</a>
+                                <span> Avia şirkətlər</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="emekdasliq">
+        <section class="partner">
+            <div class="container">
+                
+                <div class="sliders">
+                    <div class="companySlider1">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox1.jpg" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox2.jpg" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox3.jpg" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox4.png" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox5.png" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox6.png" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox7.png" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox8.png" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox9.jpg" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox10.jpg" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="companySlider2">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox11.png" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox12.png" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox13.png" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox14.png" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox15.png" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox16.png" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox17.png" alt="Company Logo 1">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="partnerBox">
+                                        <img src="../img/partnerBox18.png" alt="Company Logo 1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footerSale">
+            <div class="footerAirplane">
+                <img src="../img/airplane.png"
+                    alt="ey uçan quşlar dırırrım, bir qanad çalın dırırım, yar gələn yoldan bir xəbər alın dırıdım">
+            </div>
+            <div class="cloud">
+                <div class="cloudContent">
+                    <div class="container">
+                        <h2 class="">Endirimli qiymət ? <br> Sizə özəl güzəştli qiymətlər üçün təklif alın</h2>
+                        <button type="button" class="btn btn-primary openModal" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">Qiymət təklifi al</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="f-dark">
+            <div class="container">
+                <div class="f-title">
+                    <h5>Əlaqə <span>vasitələri</span></h5>
+                    <div class="f-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100092662516750" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/eraatour?igshid=MzRlODBiNWFlZA==" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@ERATUR" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/mwlite/in/era-tur-241054278" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="f-menu">
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>012 596 05 13</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>055 596 05 14</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="">Şirkət</a></li>
+                        <li><a href="">Sertifikatlar</a></li>
+                        <li><a href="">Turlar</a></li>
+                        <li><a href="xidmetler.htm">Xidmətlər</a></li>
+                        <li><a href="">Əməkdaşlıq</a></li>
+                        <li><a href="">Azərbaycanı kəşf et</a></li>
+                        <li><a href="">Əlaqə</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="f-copy">
+            <div class="container">
+                <div class="copy-text">
+                    <p>&copy; Copyright 2023. Bütün hüquqları qorunur</p>
+                </div>
+                <div class="copy-logo">
+                    <p>Saytın hazırlanması:</p>
+                    <img src="../img/okmedialogo.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <a href="https://wa.me/994709233313" target="_blank" class="wpIcon"><img src="../img/whatsapp.png" alt=""></a>
+
+
+
+    <script src="../Js/navBar.js"></script>
+    <script src="../Js/airplane.js"></script>
+    <script src="../Js/audio.js"></script>
+    <script src="../Js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../Js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
