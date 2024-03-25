@@ -1,4 +1,4 @@
-const swiper = new Swiper("header .mySwiper", {
+const swiper = new Swiper(".headerSlider .mySwiper", {
   centeredSlides: true,
   loop: true,
   autoplay: {
@@ -68,7 +68,7 @@ const swiper3 = new Swiper(".discover .mySwiper", {
 const swiper4 = new Swiper(".companySlider1 .mySwiper", {
   // changeLanguageDirection(),
   slidesPerView: 1,
-  loop:true,
+  loop: true,
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
@@ -91,7 +91,7 @@ const swiper4 = new Swiper(".companySlider1 .mySwiper", {
 });
 
 const swiper5 = new Swiper(".companySlider2 .mySwiper", {
-  loop:true,
+  loop: true,
   slidesPerView: 1,
   autoplay: {
     delay: 3000,
