@@ -10,7 +10,7 @@
 //     air.style.right = `${count}%`;
 //     x = newY;
 // }
-// window.onscroll = plane;
+// window.onscroll = plane; 
 
 
 const footer = document.querySelector('footer');
